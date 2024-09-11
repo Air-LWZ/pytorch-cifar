@@ -20,6 +20,7 @@
 •   PyTorch
 •   torchvision
 •   CUDA（可选，用于 GPU 加速）
+
 ##安装
 1.克隆代码仓库：
 git clone https://github.com/your-repo/cifar10-pytorch.git
@@ -27,6 +28,7 @@ cd cifar10-pytorch
 2.安装所需的依赖：
 pip install -r requirements.txt
 3.（可选）如果计划使用 GPU，请确保已安装 CUDA 和 cuDNN。
+
 ##使用方法
 1. 训练模型
 要使用默认设置训练模型，请运行：
@@ -49,6 +51,7 @@ pip install -r requirements.txt
 •   EfficientNetB0
 •   RegNetX_200MF
 •   SimpleDLA（默认）
+
 
 ##您可以在以下行中替换模型：
 net = SimpleDLA()  # 替换为您选择的模型
@@ -73,6 +76,7 @@ python main.py --resume
 
 6. 学习率调度器
 使用余弦退火学习率调度器来调整训练期间的学习率。它会在训练过程中将学习率从初始值逐渐减少到 0。
+
 ##CIFAR-10 数据集
 CIFAR-10 数据集包含 60,000 张 32x32 彩色图像，分为 10 类，每类 6,000 张图像。数据集分为 50,000 张训练图像和 10,000 张测试图像。如果指定的目录中不存在数据集，它将自动下载。
  • 训练时的转换：应用随机裁剪和水平翻转来增强数据。
